@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    /* 去掉默认的样式 reset.css*/
+    *{margin:0;padding:0;} 
+    a{text-decoration: none}  
+    body{background:#f4f4f4}
+    .slider-item{width:203px;height:260px;background: #fff;display: block;overflow: hidden}  
+    /* margin-top的传递问题 解决办法: 给父元素加属性overflow:hidden */
+    .seckill-pic{width:140px;height:140px;margin:30px auto 0}
+    .seckill-pic img{width: 100%;height:100%;}
+    .seckill-des{font-size:12px;color:#333;font-weight:400;line-height:18px;margin:13px auto 0;width:160px; 
+    /* 溢出隐藏: 超出宽度的部分隐藏起来 */
+    overflow: hidden;
+    /* 文本的隐藏方式: 省略号 */
+    text-overflow: ellipsis;
+    /* 强制文字不折行 */
+    white-space: nowrap;
+    }
+    /* 
+    边框线宽度  
+    边框线的类型 solid 实线  dashed 虚线 dotted点状线
+    边框线的颜色
+     */
+    .seckill-price{width:158px;height:22px;border:1px solid #e1251b;margin:7px auto 0}
+    .price-current{float:left;height:100%;background: #e1251b}
+
+    </style>
+</head>
+<body>
+    <!--  图片: 尺寸 width height 居中 margin: 上下 左右(atuo)
+    文字: 大小 颜色 粗细 行高 间距 省略号
+    -->
+    <!-- 秒杀模块 -->
+    <div class="slider">
+        <a href="#" class="slider-item">
+            <div class="seckill-pic">
+                <img src="https://img20.360buyimg.com/mobilecms/s280x280_jfs/t27316/131/2287620813/268104/5a32b633/5bfca4a4Nd1d427bb.jpg.webp" alt="">
+            </div>
+            <h6 class="seckill-des">阿迪达斯ADIDAS 三叶草 男女 休闲系列 STAN SMITH 史密斯绿尾 休闲鞋 M20324 41码</h6>
+            <div class="seckill-price">
+                <!-- 现价 -->
+                <span class="price-current">
+                    <i>￥</i>
+                    <span>598.00</span>
+                </span>
+                <!-- 原价 del -->
+                <span class="price-origin">
+                    <i>￥</i>
+                    <span>598.00</span>
+                </span>
+            </div>    
+        </a>
+    </div>
+</body>
+</html>

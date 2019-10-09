@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    /* 
+    padding 内填充 会影响元素的面积大小   
+    margin  外间距 不会影响元素的面积大小 与其他模块的间距
+     */
+    .box{
+        width: 400px;
+        height: 400px;    
+        background: #000;
+        /* 顺时针方向:上 右 下 左
+        1个取值:padding:10px  上 = 右 = 下 = 左 = 10px 
+        2个取值:padding:10px 20px; 上=下=10  左=右=20
+        3个取值:10px 20px 30px    上=10  左=右=20 下=30
+        4个取值:padding:10px 20px 30px 40px;  
+        */
+        /* 
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-left:10px;
+        margin-right:10px; */
+
+        /* margin:10px 0 0 0  =  margin-top:10px; */
+    }
+    .box1{
+        width: 400px;
+        height: 400px;
+        background:red;
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

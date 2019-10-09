@@ -1,0 +1,258 @@
+/* common 公用的 */
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.header {
+    width: 1204px;
+    height: 83px;
+    line-height: 83px;
+    background: gainsboro;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #2A2A2A;
+    overflow: hidden
+}
+
+.header a {
+    color: #2A2A2A
+}
+
+.header a:hover {
+    color: #2B7DD1
+}
+
+.logo {
+    width: 176px;
+    height: 52px;
+    margin-top: 16px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -9999em;
+}
+
+.nav li {
+    float: left;
+    padding: 0 30px;
+}
+
+.cart {
+    margin-right: 39px;
+    font-size: 0;
+}
+
+.cart-icon {
+    display: inline-block;
+    vertical-align: -4px;
+    width: 24px;
+    height: 22px;
+    margin-right: 7px;
+    background: url(../images/cart-icon.png) no-repeat
+}
+
+.cart-shopping {
+    font-size: 14px;
+}
+
+.user-center li {
+    float: left;
+    margin-right: 30px;
+}
+
+/* banner */
+.banner {
+    position: relative;
+    width: 1204px;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 360px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.banner-nav li {
+    height: 73px;
+    line-height: 73px;
+    font-size: 14px;
+    color: #FDFDFE;
+}
+
+.banner-nav li span {
+    display: block;
+    margin: 0 25px;
+    border-bottom: 1px solid #fff;
+    position: relative
+}
+
+.banner-nav li span::after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(135deg);
+    position: absolute;
+    right: 0;
+    top: 33px;
+}
+
+.banner .layer {
+    position: absolute;
+    top: 0;
+    left: 240px;
+    width: 573px;
+    height: 360px;
+    background: red;
+    display: none
+}
+
+/* 鼠标事件 */
+.banner li:hover .layer {
+    display: block
+}
+
+.banner li:hover {
+    background: rgba(0, 0, 0, .5)
+}
+
+/* 划掉: 单词写错  类名写错  覆盖*/
+
+.column {
+    width: 1204px;
+    margin: 0 auto;
+}
+.col ul{
+    /* 让内容不要掉下去 多出一个右间距 */
+    width:1269px
+}
+.col li {
+    float:left;
+    position: relative;
+    width: 251px;
+    margin-right:65px;
+    box-shadow:0px 3px 9px 0px rgba(2,2,2,0.27);
+}
+.col li img{
+    width:251px;
+    height:141px; 
+}
+.col .txt{
+    z-index:3;
+    position: relative;
+    padding:0 13px 0 16px;
+    /* padding-right:13px;
+    padding-left:16px; */
+    height:43px;
+    line-height: 43px;
+    color:#868484;
+    background: #fff;
+}
+.col .txt .price{
+    color:#C71B1B
+}
+.col .mask{
+    z-index:2;
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:251px;
+    height:106px;
+    padding:21px 0 0 15px;
+    box-sizing: border-box;
+    background: #fff;
+    /* 过渡动画 - 缓冲特效  属性名称 all代表所有名称*/
+    transition: bottom 1s ease;
+}
+.mask h3{
+    color:#1E1E1E;
+    font-size:14px;
+    font-weight:400;
+}
+.mask p{
+    margin-top:10px;
+    width:178px;
+    font-size:12px;
+    color:#9E9D9D;
+}
+/* 鼠标移上效果 */
+.col li:hover .mask{
+    bottom:43px;
+}
+/* 右侧漂浮导航 */
+.floatBar{
+    z-index: 999;
+    position: fixed;
+    top:50%;
+    right:40px;
+    width:65px;
+    height: 244px;
+    background:#fff;
+    box-shadow:0px 6px 6px 0px rgba(2,2,2,0.17);
+} 
+.floatBar li{
+    height:60px;
+    border-bottom:1px solid red;
+    margin:0 15px 0 12px;
+}
+.floatBar li .icon{
+    display: block;
+    width:38px;
+    height:59px;
+    /* background: url(../images/sprites.png) no-repeat center top; */
+    background-image: url(../images/sprites.png);
+    background-repeat: no-repeat;
+}
+.floatBar li .txt{
+    display: none;
+    width:38px;
+    padding:17px 7px 0;
+    box-sizing: border-box;
+    text-align: center
+}
+.floatBar li:hover .icon{
+    display: none;
+}
+.floatBar li:hover .txt{
+    display: block;
+}
+.floatBar li .code{
+    display: none;
+    position: absolute;
+    bottom:0;
+    left:-165px;
+    width:160px;
+    height:184px;
+    background:red;
+}
+.floatBar li:hover .code{
+    display: block
+}
+.floatBar li .icon-feedback{
+     background-position:center 0 
+}
+.floatBar li .icon-quesiton{
+    background-position: center -59px
+}
+.floatBar li .icon-app{
+    background-position: center -118px;
+}
+.floatBar li .icon-weixin{
+    background-position: center -177px;
+}
+
+
+
+

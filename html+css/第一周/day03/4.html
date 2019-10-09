@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>左图右文下列表</title>
+    <style type="text/css">
+    /* 去掉浏览器默认的间距 */
+    *{margin:0;padding:0}    
+    /* 去掉a自带的下划线 */ 
+     a{text-decoration: none} 
+      /*去掉li默认的小黑点和数字  */
+     li{list-style: none} 
+    .news{overflow: hidden}
+    .pic{width:214px;height:120px;float:left}
+    /* 自适应父元素的尺寸  */
+    .pic img{width:100%;height:100%;}
+    .txt{width:211px;height:120px;background-color: aqua;float:left}
+    </style>
+</head>
+<body>
+    <!-- p  h1-h6  div 独占一行的标签
+    a 行内元素设置宽度不起作用
+    div 块级元素可以设置宽高以及盒子模型的所有属性
+
+    浮动: 让独占一行的元素 不独占一行
+    副作用: 子元素浮动会导致父元素的高度塌陷  height: 0
+    解决办法: 给父元素加 height:120px
+    overflow:hidden 原理: 触发BFC的规则的其中一条，会把浮动元素的高度计算进去
+    -->
+        <div class="news">
+            <div class="pic"><img src="https://inews.gtimg.com/newsapp_ls/0/10119902615_196130/0" alt=""></div>
+            <div class="txt"><a href="#">央视主播调侃美方加戏：美国所谓电话是想给股市“打call”</a></div>
+        </div>
+        <ul>
+            <li><a href="#">巴西总统又改口：愿意接受G7援助 只要马克龙收回羞辱言论</a></li>
+            <li><div></div></li>
+        </ul>
+    
+</body>
+</html>

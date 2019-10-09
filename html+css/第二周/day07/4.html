@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>雪碧图 sprites</title>
+    <style type="text/css">
+    .sideBar li{
+        width:48px;
+        height:48px;
+        margin-bottom:20px;
+        background-image: url(http://gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/fisp_static/common/img/sidebar/icon-merged_b8bc211.png);
+        background-repeat:no-repeat;
+    }
+    .qr-code{background-position: 0 0}
+    .favorite{background-position: 0 -51px}
+    .hot{background-position:0 -102px}
+    </style>
+</head>
+<body>
+   <!-- 驼峰命名法: 一个单词首字母小写，其他每一个有意义的单词首字母大写
+        mod-sidebar 
+        item qr-code button-rotate buttonRotate  
+    ctrl + R 标尺 从标尺上可以拉出参考线
+    atl + delete 填充前景色
+    -->
+   
+    <ul class="sideBar">
+        <li class="qr-code"></li>
+        <li class="favorite"></li>
+        <li class="hot"></li>
+    </ul>
+</body>
+</html>

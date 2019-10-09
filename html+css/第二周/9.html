@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    .content{
+        /* 红色色块最后的大小是多少？ */
+        width: 200px;
+        height: 200px;
+        padding:10px 20px 30px;
+        border:50px solid red;
+        border-top:10px;
+        background: firebrick;
+        margin:10px;
+        /* 怪异盒子模型 */
+        box-sizing: border-box;
+        
+        /* 宽度 =  200 + 20 + 20 + 50 + 50 = 340
+        高度 =  200 + 10 + 30 +  0 + 50 = 290 */
+    }
+    *{margin:0;padding:0;}
+    /* 利用margin负值的技巧 */
+    .main{margin-left:-2px;}
+    .item{float:left;width:25%;height:200px;border-left:2px solid #fff;box-sizing: border-box;padding:3px;}
+    .item:nth-child(2n+1){background: forestgreen}
+    .item:nth-child(2n){background: rebeccapurple}
+    .item img{width:100%;height:100%}
+    </style>
+</head>
+<body>
+    <div class="content"></div>
+    <div class="main">
+       <div class="item">
+           <img src="https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg" alt="">
+       </div>
+       <div class="item"></div>
+       <div class="item"></div>
+       <div class="item"></div>
+    </div>
+</body>
+</html>

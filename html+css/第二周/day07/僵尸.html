@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    .main{
+        width: 200px;
+        height: 312px;
+        background: url(images/walkingdead.png);
+        margin-left: 1600px;
+        animation:test 2s steps(10) infinite,
+                  walk 15s ease infinite alternate;  
+    }
+    @keyframes test {
+        0%{background-position: 0 0;}
+        100%{background-position: -2000px 0;}
+    }
+    @keyframes walk {
+        0%{transform: translateX(0)}
+        100%{transform: translateX(-1500px)}
+    }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table表格</title>
+    <style type="text/css">
+        table {
+            /* 去掉表格默认的间隙 */
+            border-collapse: collapse;
+            width:1080px;
+        }
+        th,td{ padding:20px 0;}
+        td {
+            text-align: center;
+        }
+        tr:nth-child(2n+1){background: floralwhite}
+        tr:nth-child(2n){background: gold}
+        tr:hover{background: forestgreen}
+        tr:nth-child(1):hover{background: none}
+    </style>
+</head>
+
+<body>
+    <!-- thead  - table head
+         tbody  - table body
+     -->
+    <table>
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+    <!-- 
+        tr 一行  td 一列   th 一列(标题:加粗  居中)
+        caption 表格的标题 
+        cellpadding 单元表格的内填充 cellpadding="10"
+        cellspacing 单元表格的间距 cellspacing="20"
+     -->
+    <table border="1">
+        <caption>薪资统计表</caption>
+        <tr>
+            <th>姓名</th>
+            <th colspan="4">学生信息</th>
+        </tr>
+        <tr>
+            <td>尹班长</td>
+            <td>清华大学</td>
+            <td>农业专业</td>
+            <td>百度</td>
+            <td>1000k</td>
+        </tr>
+        <tr>
+            <td>李同学</td>
+            <td>家里蹲大学</td>
+            <td>科研专业</td>
+            <td>腾讯</td>
+            <td>10k</td>
+        </tr>
+        <tr>
+            <td>尹班长</td>
+            <td>清华大学</td>
+            <td>农业专业</td>
+            <td>百度</td>
+            <td>1000k</td>
+        </tr>
+        <tr>
+            <td>李同学</td>
+            <td>家里蹲大学</td>
+            <td>科研专业</td>
+            <td>腾讯</td>
+            <td>10k</td>
+        </tr>
+        <tr>
+            <td>尹班长</td>
+            <td>清华大学</td>
+            <td>农业专业</td>
+            <td>百度</td>
+            <td>1000k</td>
+        </tr>
+        <tr>
+            <td>李同学</td>
+            <td>家里蹲大学</td>
+            <td>科研专业</td>
+            <td>腾讯</td>
+            <td>10k</td>
+        </tr>
+    </table>
+</body>
+
+</html>

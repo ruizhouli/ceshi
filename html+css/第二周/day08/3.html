@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>角度旋转动效</title>
+    <style type="text/css">
+    .sidebar{
+        position: relative;
+        width:400px;
+        height:400px;
+        margin:40px auto;
+        overflow: hidden
+    }
+    .code{
+        width:400px;
+        height:400px;
+        background: #000;
+    }
+    .mask{
+        /* 绝对定位: 会脱离文档流  重叠 */
+        position: absolute;
+        top:0;
+        left:0;
+        width: 400px;
+        height: 400px;
+        background: red;
+        transform: rotate(90deg);
+        /* 已某个固定的点进行我们的变换 */
+        transform-origin: left bottom;
+        transition: all .3s ease;
+    }
+    .sidebar:hover .mask{
+        transform: rotate(0deg)
+    }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="code"></div>
+        <!-- 遮罩滑块 -->
+        <div class="mask"></div>
+    </div>
+</body>
+</html>

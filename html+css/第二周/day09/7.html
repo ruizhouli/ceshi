@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绝对定位 position</title>
+    <style type="text/css">
+    /*  参照物:
+    父元素有没有加position
+    有   参照物就是这个父元素
+    没有 参照物继续往上查找,直到找到html为止，浏览器窗口
+    */
+    *{margin:0;padding:0;}
+    .content{
+        position:relative;
+        width:500px;
+        margin:50px auto;
+    }
+    .left{
+        position: absolute;
+        top:0;
+        left:0;
+        width:400px;
+        height:400px;
+        background: #000;
+    }
+    .right{
+        width:500px;
+        height:500px;
+        background: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div style='height:1000px'></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子模型的margin外间距的重叠问题</title>
+    <style type="text/css">
+    /* 重叠: 
+    上边的模块 margin-bottom
+    下边的模块 margin-top
+    结果: 取大值
+
+    BFC:
+    Box垂直方向的距离由margin决定。属于同一个BFC(上例中是body根元素的BFC)的两个相邻Box的margin会发生重叠
+
+    如果我们就想要相加的结果: BFC的触发的其中一个条件
+    解决办法: 给加了上外间距(margin-top)的容器外层嵌套一个div
+    给嵌套的这个div，添加一个属性 overflow:hidden
+     */
+    .box{
+        width:400px;
+        height: 400px;
+        background: #000;
+        margin-bottom:50px;
+    }
+    .box1{
+        margin-top:80px;
+        width:400px;
+        height: 400px;
+        background: red
+    }
+    .wrap{
+       overflow:hidden
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="wrap">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

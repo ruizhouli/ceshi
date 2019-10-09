@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>固定定位 position</title>
+    <style type="text/css">
+    /* 是否脱离文档
+固定定位fixed     脱离  滚动条滚动的时候 不动
+绝对定位absolute  脱离  滚动条滚动的时候 跟着滚动
+相对定位relative  不脱离(结构不改变)
+
+    参照物:
+固定定位  参照物 - 浏览器窗口
+绝对定位  参照物 position  
+相对定位  参照物 - 它自己原本的位置 
+
+    方位: 结合position  
+    top
+    bottom
+    left
+    right
+    */
+    .left{
+        position: fixed;
+        width:400px;
+        height:400px;
+        background: #000;
+    }
+    .right{
+        width:500px;
+        height:500px;
+        background: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div style='height:1000px'></div>
+</body>
+</html>

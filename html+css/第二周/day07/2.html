@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景类属性</title>
+    <style type="text/css">
+    /*  background-color 和 color 区别 */
+    .pic{
+        width: 500px;
+        height: 300px;
+        background-color:gray;
+        background-image:url(https://box.bdimg.com/static/fisp_static/common/img/searchbox/logo_news_276_88_1f9876a.png);
+        background-repeat: no-repeat;
+        background-position:center center;
+    }
+    .banner{
+        width: 100%;
+        height:400px;
+        /* background-color:red;
+        background-image: url(https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-7.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed; */
+
+        /* CSS 可以用复合属性 - 缩写 
+        background：颜色  图片  平铺  位置  随着滚动条滚动或者固定 */
+        background:red url(https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-7.jpg) no-repeat center top fixed;
+    }
+    </style>
+</head>
+<body>
+    <div class="pic"></div>
+    <div class="banner"></div>
+    <div class="pic"></div>
+    <div style="height:1000px;"></div>
+</body>
+</html>

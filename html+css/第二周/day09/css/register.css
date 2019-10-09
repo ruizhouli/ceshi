@@ -1,0 +1,5 @@
+.content p{margin-bottom:20px}
+.content .pass-label{float:left;width:65px;height:42px;line-height:42px;margin-right:10px;text-align:right}
+.content .txt-input{float:left;width:328px;height:16px;padding:11px 10px;border:1px solid #ddd}
+.content .txt-input-code{width:156px;margin-right:10px}.content .txt-input-revice{width:162px;height:40px}.reg-input{width:350px;height:50px;text-align:center;line-height:50px;background:#3f89ec;border:0;border-radius:3px;color:#fff}
+.content .read-label{height:10px} 

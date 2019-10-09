@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鼠标移入移出的特效 display</title>
+    <style type="text/css">
+    /* :hover CSS中鼠标事件 */
+    .layer{width: 100px;height:80px;background: darkorange;display: none}
+    /* 后代选择器  包含的关系 */
+    .nav:hover .layer{display:block}
+    </style>
+</head>
+<body>
+    <!--  图片懒加载 -->
+    <!-- lazyimg lazyimg_loaded seckill-item__image -->
+    <div class="nav">
+        <span>更多</span>
+        <div class="layer"></div>
+    </div>
+</body>
+</html>

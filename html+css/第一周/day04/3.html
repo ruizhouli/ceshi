@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>行内元素 和 块级元素的区别</title>
+    <style type="text/css">
+    body{background:#000}
+    p{width:100px;height:30px;margin-top:30px;background-color: royalblue}
+    a{width:100px;height:30px;margin-top:30px;background-color: royalblue}
+    
+    
+    /* logo为什么不显示？i是一个行内元素 高宽根本就没有起作用 */
+    i{width:55px;height:55px;background:url(https://s02.mifile.cn/assets/static/image/mi-logo.png) no-repeat;display: block}
+    </style>
+</head>
+<body>
+    <!-- 男人 女人 人妖 
+      盒子模型属性: 宽度width 高度height 内填充 padding 外间距 margin border边框线  
+        
+    块级元素：div 标题系列 段落 p  三大列表 ...
+    + 天生自带的display: block
+    + 排列方式: 独占一行，上下垂直排列
+    + 没有设置宽高的情况下，宽度是它父元素的宽度， 高度是它本身内容的高度
+    + 可以设置宽高以及盒子模型的所有属性
+    -->
+    <div></div>
+    <p>块级元素</p>
+    <p>块级元素</p>
+
+    <!-- 行内元素 :  em i strong b a sup sub ...
+    + 天生自带的display: inline    
+    + 排列方式: 不独占一行，左右水平排列
+    + 没有设置宽高的情况下，宽度和高度都是本身内容的大小
+    + 设置宽高和设置margin和padding的上下不起作用，如要起作用的话，需要转化 display:block/inline-block
+    + 行内元素会受换行符和空格的影响产生间距 
+
+    行内块元素:img  马 +  驴  = 骡子  display: inline-block
+    1.即具有行内元素的特点，还有块级元素的特点
+    2.不独占一行 左右结构
+    3.会受换行符和空格的影响产生间距 
+    4.可以设置宽高以及盒子模型的所有属性
+
+    display的取值(面试题)
+    inline 行内元素 内联元素
+    block  块级元素
+    inline-block  行内块级元素
+    none 隐藏不见
+
+     区别：
+     display取值
+     是否独占一行
+     排列方式
+     设置宽高是否起作用
+     不设置宽高
+     是否受换行符的影响产生间距问题
+    -->
+    <span></span>  
+    <a href="#">行内元素</a>
+    <a href="#">行内元素</a> 
+    <i></i>
+
+    <div><span></span></div> - 正确的
+    <span><div></div></span> - 错误的
+</body>
+</html>

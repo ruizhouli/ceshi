@@ -1,0 +1,7 @@
+*{margin:0;padding:0}
+.meta-links{width:1040px;padding:0 20px;margin:0 auto;background: gainsboro;overflow: auto}
+.meta-link{float:left;width:33.33%;padding:45px 0;}
+.pic{display: inline-block;width:50px;height:50px;background-repeat: no-repeat;background-size:contain;background-color: rosybrown}
+.txt{display: inline-block;text-align: left}
+.meta-link:nth-child(2){text-align: center}
+.meta-link:nth-child(3){text-align: right}

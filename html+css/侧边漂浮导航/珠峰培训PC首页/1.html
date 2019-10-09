@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        li {
+            list-style: none
+        }
+        .list li{
+            padding-left:30px;
+            line-height:30px;
+            width:500px;
+            /* 单行省略号的条件 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+        .list li::before {
+            content: ""; 
+            display: inline-block;
+            /* 行内块元素的对齐方式 - 基线对齐 */
+            vertical-align: middle;
+            margin-right:10px;
+            width: 4px;
+            height: 4px;
+            background: #000
+        }
+    </style>
+</head>
+<!-- sprites  icons 雪碧图 -->
+<body>
+    <ul class="list">
+        <li>Avalon探索之旅基础教程Avalon探索之旅基础教程——复Avalon探索之旅基础教程——复Avalon探索之旅基础教程——复Avalon探索之旅基础教程——复——复</li>
+        <li>JavaScript正则表达式</li>
+        <li>CSS3绚丽CSS3绚丽CSS3绚丽CSS3绚丽CSS3绚丽CSS3绚丽CSS3绚丽CSS3绚丽CSS3绚丽CSS3绚丽CSS3绚丽</li>
+        <li>jQuery基础(五)一Ajax应用与常用</li>
+        <li>AC2016腾讯前端技术大会照片墙</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片缩放特效</title>
+    <style type="text/css">
+    /* transfrom 变换: 缩放scale  位移 translate  角度旋转 
+       transition 过渡动画 就是让元素变换的过程中效果没有那么僵硬
+       :属性名称  持续时间  运动曲线  延迟时间
+         all                ease
+       animation 动画(关键帧 @keyframes)
+    */
+    .pic{width: 300px;height:300px;overflow: hidden;}
+    .pic img{width:300px;height:300px;transition:all 1s ease}
+    .pic:hover img{transform: scale(2);}
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <img src="http://shp.qpic.cn/cms_pic/2460266769/2d709ce2b04f6d1e55477251ce62e7bc/258" alt="">
+    </div>
+</body>
+</html>
